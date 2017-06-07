@@ -39,9 +39,13 @@
         <url>http://localhost:9090/artifactory/ppt</url>
     </snapshotRepository>
 </distributionManagement>
-<dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-release-plugin</artifactId>
-    <version>2.3.2</version>
-</dependency>
+<build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.3.2</version>
+      </plugin>
+    </plugins>
+  </build>
 </project>
